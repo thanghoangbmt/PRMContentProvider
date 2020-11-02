@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtContactName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Contact Provider Demo"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Use Contact Content Provider"
+        android:onClick="clickToOpenContact"
+        />
+
+    <Button
+        android:id="@+id/btCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copy DB to SDCard"
+        android:onClick="clickToCopy"
+        />
+
+    <TextView
+        android:id="@+id/txtFileLists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"/>
+
+    <Button
+        android:id="@+id/btOwn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Own Content Provider"
+        android:gravity="center"
+        android:onClick="clickToOpenOwn"/>
+
+</LinearLayout>
